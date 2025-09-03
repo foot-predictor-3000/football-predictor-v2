@@ -111,7 +111,7 @@
      */
     async function loadOnnxModel(leagueCode) {
         statusText.textContent = `Loading AI model for ${leagueCode}...`;
-        const modelUrl = `https://raw.githubusercontent.com/foot-predictor-3000/foot-predictor/main/models/model_${leagueCode}.onnx`;
+        const modelUrl = 'https://raw.githubusercontent.com/foot-predictor-3000/football-predictor-v2/main/models/model_${leagueCode}.onnx';
         
         try {
             ortSession = await ort.InferenceSession.create(modelUrl);
